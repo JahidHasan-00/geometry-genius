@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="m-4">
+    <h1 class="text-2xl font-bold">Bismillah</h1>
+    <header>
+
+    </header>
+    <main>
+        <div class="flex flex-col lg:flex-row">
+            <!-- Card first section -->
+            <div class="flex-1 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Card Triangle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/triangle.png" alt="Triangle" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Triangle</h2>
+                      <p>Area (A) = 0.5 * b * h</p>
+                      <div class="flex items-center justify-between">
+                        <input id="triangle-base" class="w-24 p-2 text-2xl rounded" placeholder="b" type="text">
+                        <span class="mr-2 ml-2">cm</span>
+                        <input id="triangle-height" class="w-24 p-2 text-2xl rounded" placeholder="h" type="text">
+                        <span>cm</span>
+                      </div>
+                      <div>
+                        <p><span>Area:</span> <span id = 'triangle-area'></span> <span>cm<sup>2</sup></span></p>
+                      </div>
+                      <div class="card-actions justify-center">
+                        <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card Rectangle -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card Parallelogram -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+                <!-- Card Parallelogram -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Shoes!</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- Card Area section -->
+            <div class="w-96 p-4 border-2 rounded-lg  border-gray-400">
+                <h1 class="text-2xl underline text-center">Area calculation</h1>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./scripts/triange-calculate.js"></script>
+</body>
+</html>
